@@ -9,7 +9,13 @@ export const Search = () => {
   };
   return (
     <StyledSearchWrap>
-      <h3>Search contact by name</h3>
+      <h3
+        style={{
+          color: '#757575',
+        }}
+      >
+        Search contact by name
+      </h3>
       <StyledSearchInput
         type="text"
         onChange={handleChange}

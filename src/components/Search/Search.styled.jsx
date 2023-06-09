@@ -9,8 +9,9 @@ export const StyledSearchWrap = styled.div`
   text-align: center;
 `;
 export const StyledSearchInput = styled.input`
-  border: 2px solid #b6d4e9;
-  border-radius: 16px;
+  border: 2px solid #7b1fa2;
+  border-radius: 4px;
   padding: 4px 16px;
+  height: 32px;
   margin-top: 8px;
 `;
