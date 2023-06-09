@@ -1,5 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { registerThunk } from 'Redux/auth/authOperations';
+import { StyledAuthForm } from 'pages/LoginPage/LoginPage';
+import { StyledBtnDel } from 'components/ContactList/ContactList.Styled';
 export const RegistrationPage = () => {
   const dispatch = useDispatch();
   const handleForm = e => {
@@ -12,7 +14,7 @@ export const RegistrationPage = () => {
     dispatch(registerThunk(user));
   };
   return (
-    <form onSubmit={handleForm}>
+    <StyledAuthForm onSubmit={handleForm}>
       <label>
         name
         <input type="text" name="name" />
@@ -25,7 +27,7 @@ export const RegistrationPage = () => {
         password
         <input type="text" name="password" />
       </label>
-      <button>Registrate</button>
-    </form>
+      <StyledBtnDel>Registrate</StyledBtnDel>
+    </StyledAuthForm>
   );
 };

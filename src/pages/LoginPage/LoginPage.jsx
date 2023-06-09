@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { loginThunk } from 'Redux/auth/authOperations';
-
+import styled from 'styled-components';
+import { StyledBtnDel } from 'components/ContactList/ContactList.Styled';
 export const LoginPage = () => {
   const dispatch = useDispatch();
   const handleForm = e => {
@@ -12,7 +13,7 @@ export const LoginPage = () => {
     dispatch(loginThunk(user));
   };
   return (
-    <form onSubmit={handleForm}>
+    <StyledAuthForm onSubmit={handleForm}>
       <label>
         email
         <input type="email" name="email" />
@@ -21,7 +22,19 @@ export const LoginPage = () => {
         password
         <input type="text" name="password" />
       </label>
-      <button>Login</button>
-    </form>
+      <StyledBtnDel>Login</StyledBtnDel>
+    </StyledAuthForm>
   );
 };
+
+export const StyledAuthForm = styled.form`
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 auto;
+  width: 320px;
+  margin-top: 24px;
+  border-radius: 4px;
+  border: solid 2px #e1bee7;
+`;
