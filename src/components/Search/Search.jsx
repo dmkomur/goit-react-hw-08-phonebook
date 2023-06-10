@@ -1,6 +1,6 @@
 import { StyledSearchWrap, StyledSearchInput } from './Search.styled';
 import { useDispatch } from 'react-redux';
-import { setFilter } from 'Redux/phoneSlice';
+import { setFilter } from 'Redux/phone/phoneSlice';
 
 export const Search = () => {
   const dispatcher = useDispatch();

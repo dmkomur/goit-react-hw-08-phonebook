@@ -12,7 +12,7 @@ export const AuthNavigation = () => {
     </ul>
   );
 };
-const StyledAuthLink = styled(Link)`
+export const StyledAuthLink = styled(Link)`
   background-color: #fff;
   padding: 4px;
   border-radius: 4px;

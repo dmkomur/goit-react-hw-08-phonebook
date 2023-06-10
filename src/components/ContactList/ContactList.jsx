@@ -4,10 +4,10 @@ import {
   StyledContactList,
 } from './ContactList.Styled';
 import { useEffect } from 'react';
-import { selectPhones, selectFilter } from '../../Redux/phoneSelectors';
+import { selectPhones, selectFilter } from '../../Redux/phone/phoneSelectors';
 import { useSelector, useDispatch } from 'react-redux';
-import { delContactThunk } from 'Redux/phoneOperations';
-import { fetchContactsThunk } from 'Redux/phoneOperations';
+import { delContactThunk } from 'Redux/phone/phoneOperations';
+import { fetchContactsThunk } from 'Redux/phone/phoneOperations';
 import { MdDelete } from 'react-icons/md';
 
 export const ContactList = ({ fileList }) => {

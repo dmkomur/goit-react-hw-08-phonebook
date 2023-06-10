@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { StyledInput, StyledBtn, StyledForm } from './FormAdd.styled';
 import { useSelector, useDispatch } from 'react-redux';
-import { selectPhones } from 'Redux/phoneSelectors';
-import { addContactThunk } from 'Redux/phoneOperations';
+import { selectPhones } from 'Redux/phone/phoneSelectors';
+import { addContactThunk } from 'Redux/phone/phoneOperations';
 
 export const FormAdd = () => {
   const [name, setName] = useState('');

@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { ponebookReducer } from './phoneSlice';
+import { ponebookReducer } from './phone/phoneSlice';
 import { authReducer } from './auth/authSlice';
 import {
   FLUSH,

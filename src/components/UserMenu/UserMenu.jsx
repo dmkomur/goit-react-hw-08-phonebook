@@ -10,7 +10,7 @@ export const UserMenu = () => {
   const userName = useSelector(authSelector);
   return (
     <div style={{ display: 'flex', gap: '8px' }}>
-      <p>{`${userName}`}</p>
+      <p>{userName}</p>
       <StyledButton
         onClick={() => dispatch(logoutThunk())}
         style={{ display: 'flex', gap: '8px' }}

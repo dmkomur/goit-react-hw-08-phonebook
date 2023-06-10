@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const StyledHeader = styled.header`
   width: 1200px;
@@ -12,4 +13,8 @@ const StyledHeader = styled.header`
 `;
 export const Header = ({ children }) => {
   return <StyledHeader>{children}</StyledHeader>;
+};
+
+StyledHeader.propTypes = {
+  children: PropTypes.node,
 };
