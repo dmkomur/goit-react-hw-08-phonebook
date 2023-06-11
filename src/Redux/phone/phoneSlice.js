@@ -62,23 +62,3 @@ export const phoneSlice = createSlice({
 
 export const { addPhone, setFilter, delPhone } = phoneSlice.actions;
 export const ponebookReducer = phoneSlice.reducer;
-
-// .addMatcher(
-// 				action => action.type.endsWith('/fulfilled'),
-// 				(state, action) => {
-// 					state.loading = false
-// 				}
-// 			)
-// 			.addMatcher(
-// 				action => action.type.endsWith('/pending'),
-// 				(state, action) => {
-// 					state.loading = true
-// 					state.error = ''
-// 				}
-// 			)
-// 			.addMatcher(
-// 				action => action.type.endsWith('/rejected'),
-// 				(state, action) => {
-// 					state.error = action.payload
-// 					state.loading = false
-// 				}
